@@ -1,0 +1,14 @@
+.new-goods {
+    padding-top: 120px;
+    padding-bottom: 150px;
+    background-color: $firstColor;
+
+    .new-goods-box {
+
+        .new-goods-product-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+}

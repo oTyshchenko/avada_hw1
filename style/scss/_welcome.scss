@@ -1,0 +1,49 @@
+.welcome-section {
+    
+    background-position-x: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/img/welcome-bg.png');
+
+    .welcome-box {
+        padding-top: 160px;
+        padding-bottom: 160px;
+        background-color: transparent;
+
+        .welcome-logo {
+            margin: 0 auto 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 320px;
+            height: 320px;
+            border: 4px solid $secondColor;
+
+            .welcome-name {
+                margin: 0 auto 7px;
+                width: min-content;
+                font: normal 64px/1 $secondFonts;
+                text-transform: uppercase;
+                color: $secondColor;
+                border-bottom: 2px solid $secondColor;
+
+            }
+
+            .welcome-logo-description {
+                text-align: center;
+                font: 400 22px/1 $primaryFonts;
+                text-transform: uppercase;
+                color: $secondColor;
+            }
+        }
+
+        .weclome-description {
+            margin: 0 auto;
+            width: 730px;
+            text-align: center;
+            font: 400 16px/24px $primaryFonts;
+            text-transform: uppercase;
+            color: $secondColor;
+        }
+    }
+}
