@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./style/css/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <title>Porten</title>
 </head>
 <body>
@@ -12,7 +14,7 @@
                 <div class="phone-box">
                     <img class="phone-img" src="./img/phone.png" alt="phone">
                 </div>
-                <input class="phone info" type="tel" name="" id="" value="8 (812) 123-45-67">
+                <input class="phone info" type="tel" name="" value="8 (812) 123-45-67">
                 <span class="time info">Работаем 7 дней в неделю</span>
                 <span class="time2 info">9:00 — 18:00</span>
             </div>
@@ -20,8 +22,7 @@
                 <div class="enter-box">
                     <img class="enter-img" src="./img/enter.png" alt="phone">
                 </div>
-                <span class="info">Войти/</span>
-                <span class="info">Регистрация</span>
+                <span class="info">Войти / Регистрация</span>
             </div>
         </section>
         <section class="second-line-box">
@@ -29,22 +30,34 @@
                 <a class="main-logo-box" href="#">
                     <h1 class="main-logo">Porten</h1>
                 </a>
-                <div class="menu">
-                    <ul class="main-menu">
+                <div id="gamburgerBox" class="gamburger-box"><img id="gamburger" class="gamburger" src="./img/gamburger.png"></div>
+                <div id="menu" class="menu">
+                    <ul id="ul" class="main-menu">
                         <li class="menu-item"><a class="menu-link">Понравилось</a></li>
                         <li class="menu-item"><a class="menu-link">личный кабинет</a></li>
                         <li class="menu-item"><a class="menu-link">настройки</a></li>
-                    </ul>
-                    <ul class="menu-baket">
-                        <li class="menu-baket-item baket">
-                            <img class="menu-baket-img" src="/img/cart.png" alt="">
+                        <li class="menu-item menu-item-box">
+                            <img class=" menu-baket-img" src="/img/cart.png" alt="">
                         </li>
-                        <li class="menu-baket-item">
+                        <li class="menu-item menu-item-box">
                             <img class="menu-baket-img" src="/img/search.png" alt="">
                         </li>
                     </ul>
                 </div>
             </div>
+            <div id="myDropdown" class="dropdown-content" data-number="0">
+                <ul id="ul" class="main-menu">
+                    <li class="menu-item"><p class="menu-link">Понравилось</p></li>
+                    <li class="menu-item"><p class="menu-link">личный кабинет</></li>
+                    <li class="menu-item"><p class="menu-link">настройки</p></li>
+                    <li class="menu-item menu-item-box">
+                        <img class=" menu-baket-img" src="/img/cart.png" alt="">
+                    </li>
+                    <li class="menu-item menu-item-box">
+                        <img class="menu-baket-img" src="/img/search.png" alt="">
+                    </li>
+                </ul>
+              </div>
         </section>
     </header>
     <section class="welcome-section">
@@ -60,52 +73,47 @@
     </section>
     <section class="new">
         <div class="new-top">
-            <div class="new-season">
-                <h3 class="main-title">СЕЗОН 2020/21</h3>
-                <hr class="main-hr">
-                <ul class="product-box">
-                    <li class="product">
+            <div class="new-top-left">
+                <h3 class="main-title third-title">СЕЗОН 2020/21</h3>
+                <hr class="main-hr third-hr">
+                <div class="product-box">
+                    <div class="product">
                         <div class="product-img-box">
                             <img class="product-img" src="/img/clock.png" alt="clock">
                         </div>
                         <p class="product-name">Louis XVI ATHOS</p>
                         <p class="product-price">165 000 руб.</p>
-                    </li>
-                    <li class="product">
+                    </div>
+                    <div class="product">
                         <div class="product-img-box">
                             <img class="product-img" src="/img/clock.png" alt="clock">
                         </div>
                         <p class="product-name">Louis XVI ATHOS</p>
                         <p class="product-price">165 000 руб.</p>
-                    </li>
-                    <li class="product">
+                    </div>
+                    <div class="product">
                         <div class="product-img-box">
                             <img class="product-img" src="/img/clock.png" alt="clock">
                         </div>
                         <p class="product-name">Louis XVI ATHOS</p>
                         <p class="product-price">165 000 руб.</p>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
-            <div class="new-coliction">
-                <h3 class="main-title second-title">Новая коллекция</h3>
-                <hr class="main-hr second-hr">
-                <button class="main-btn">Каталог</button>
+            <div class="new-top-right">
+                <h3 class="main-title third-title">Новая коллекция</h3>
+                <hr class="main-hr third-hr">
+                <button class="main-btn">каталог</button>
             </div>
         </div>
         <div class="new-bottom">
-            <div class="new-photo">
-                <img class="new-photo-img" src="/img/img2.png" alt="suit">
-            </div>
-            <div class="colection2018-box">
-                <div class="colection2018">
-                    <h3 class="main-title third-title">коллекция 2018</h3>
-                    <hr class="main-hr third-hr">
-                    <p class="colection2018-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non rutrum ornare ut mattis habitant dui arcu. Sagittis amet nunc ut neque quis nibh arcu. Vivamus vestibulum nisi et venenatis sed scelerisque magna consectetur. Amet convallis quis gravida facilisis vulputate. Faucibus facilisi habitasse ipsum interdum dictum aliquet. Velit quis ullamcorper pulvinar nulla malesuada integer. Aenean praesent viverra nulla nullam natoque volutpat curabitur auctor. Viverra viverra ullamcorper scelerisque risus dignissim egestas. Id aliquam a aliquam egestas leo orci pharetra sed diam. 
-                    </p>
-                    <button class="main-btn">посмотреть коллекцию</button>
-                </div>
+            <div class="juts-img-box"></div>
+            <div class="new-bottom-right">
+                <h3 class="main-title third-title">коллекция 2018</h3>
+                <hr class="main-hr third-hr">
+                <p class="some-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non rutrum ornare ut mattis habitant dui arcu. Sagittis amet nunc ut neque quis nibh arcu. Vivamus vestibulum nisi et venenatis sed scelerisque magna consectetur. Amet convallis quis gravida facilisis vulputate. Faucibus facilisi habitasse ipsum interdum dictum aliquet. Velit quis ullamcorper pulvinar nulla malesuada integer. Aenean praesent viverra nulla nullam natoque volutpat curabitur auctor. Viverra viverra ullamcorper scelerisque risus dignissim egestas. Id aliquam a aliquam egestas leo orci pharetra sed diam.
+                </p>
+                <button class="main-btn">посмотреть коллекцию</button>
             </div>
         </div>
     </section>
@@ -216,7 +224,6 @@
                     <h4 class="top-footer-title">РАссылка</h4>
                     <p class="top-footer-description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus nunc nulla nibh.
-
                     </p>
                     <form class="form">
                         <input class="email" type="email" name="email" id="" placeholder="Ваша почта">
@@ -232,5 +239,10 @@
             </div>
         </div>
     </footer>
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./script/index.js"></script>
 </body>
 </html>
