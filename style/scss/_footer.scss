@@ -1,7 +1,6 @@
 .main-footer {
     .top-footer-box {
-        padding-top: 80px;
-        padding-bottom: 100px;
+        padding: 40px 5%;
         background-size: cover;
         background-position-x: center;
         background-repeat: no-repeat;
@@ -13,10 +12,12 @@
             justify-content: space-between;
 
             .top-footer1 {
+                margin: 0 auto 20px;
                 width: 350px;
             }
 
             .top-footer2 {
+                margin: 0 auto 20px;
                 width: 290px;
 
                 .tag-cloud {
@@ -32,21 +33,25 @@
                         color: #D0D0D0;
                         background-color: $thirdColor;
                         cursor: pointer;
+                        &:hover {
+                            background-color: #1F1F1F;
+                        }
                     }
                 }
             }
 
             .top-footer3 {
+                margin: 0 auto 20px;
                 width: 350px;
 
                 .form {
                     display: flex;
                     margin-top: 40px;
-                    width: 350;
+                    width: 320;
 
                     .email {
                         padding: 10px 20px;
-                        width: 210px;
+                        width: 200px;
                         background: rgba(255, 255, 255, 0.4);
 
                         &::-webkit-input-placeholder {color:darkgrey;}
@@ -57,13 +62,16 @@
                     }
 
                     .form-btn {
-                        padding: 10px 20px;
-                        width: 140px;
+                        padding: 10px 10px;
+                        width: 120px;
                         letter-spacing: 5%;
                         color: $secondColor;
                         font: 400 14px/21px $primaryFonts;
                         background: $thirdColor;
                         cursor: pointer;
+                        &:hover {
+                            background-color: #1F1F1F;
+                        }
                     }
                 }
             }
@@ -71,8 +79,8 @@
     }
 
     .bottom-footer-box {
-        padding-top: 17px;
-        padding-bottom: 17px;
+        padding: 17px 20px;
+
         background-color: $firstColor;
 
         .bottom-footer {
@@ -88,6 +96,103 @@
             .bottom-footer-right {
                 font: 700 12px/1 $primaryFonts;
                 color: $secondColor;
+            }
+        }
+    }
+}
+
+@media (min-width: 1150px) {
+    .main-footer {
+        .top-footer-box {
+            padding-top: 80px;
+            padding-bottom: 100px;
+            background-size: cover;
+            background-position-x: center;
+            background-repeat: no-repeat;
+            background-image: url(../../img/footer.png);
+    
+            .top-footer {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+    
+                .top-footer1 {
+                    width: 350px;
+                }
+    
+                .top-footer2 {
+                    width: 290px;
+    
+                    .tag-cloud {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+    
+                        .tag {
+                            margin-bottom: 20px;
+                            padding: 10px 20px;
+                            text-align: center;
+                            font: 400 14px/1 $primaryFonts;
+                            color: #D0D0D0;
+                            background-color: $thirdColor;
+                            cursor: pointer;
+                        }
+                    }
+                }
+    
+                .top-footer3 {
+                    width: 350px;
+    
+                    .form {
+                        display: flex;
+                        margin-top: 40px;
+                        width: 350;
+    
+                        .email {
+                            padding: 10px 20px;
+                            width: 210px;
+                            background: rgba(255, 255, 255, 0.4);
+    
+                            &::-webkit-input-placeholder {color:darkgrey;}
+                            &::-moz-placeholder          {color:darkgrey;}
+                            &:-moz-placeholder           {color:darkgrey;}
+                            &:-ms-input-placeholder      {color:darkgrey;}
+    
+                        }
+    
+                        .form-btn {
+                            padding: 10px 20px;
+                            width: 140px;
+                            letter-spacing: 5%;
+                            color: $secondColor;
+                            font: 400 14px/21px $primaryFonts;
+                            background: $thirdColor;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .bottom-footer-box {
+            padding-top: 17px;
+            padding-bottom: 17px;
+            background-color: $firstColor;
+    
+            .bottom-footer {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+    
+                .bottom-footer-left {
+                    font: 400 12px/1 $primaryFonts;
+                    color: $secondColor;
+                }
+    
+                .bottom-footer-right {
+                    font: 700 12px/1 $primaryFonts;
+                    color: $secondColor;
+                }
             }
         }
     }
